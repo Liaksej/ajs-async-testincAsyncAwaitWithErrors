@@ -15,7 +15,7 @@ test("GameSavingLoader.load() should return error", async () => {
 
 test("GameSavingLoader.load() should return parsed data", async () => {
   const result = await GameSavingLoader.load();
-  expect(JSON.parse(result)).toEqual({
+  expect(result).toEqual({
     id: 9,
     created: 1546300800,
     userInfo: { id: 1, name: "Hitman", level: 10, points: 2000 },
